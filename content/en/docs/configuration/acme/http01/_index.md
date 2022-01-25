@@ -338,9 +338,9 @@ This field has the same meaning as the
 
 cert-manager will perform reachability tests before attempting a HTT01
 challenge.  By default cert-manager will use the recursive nameservers taken
-from `/etc/resolv.conf` to query the challenge url.
+from `/etc/resolv.conf` to query the challenge URL.
 
-If this is not desired (for example with split-horizon DNS), the cert-manager 
+If this is not desired (for example with split-horizon DNS), the cert-manager
 controller exposes a flag that allows you alter this behavior:
 
 `--acme-http01-solver-nameservers` Comma separated string with host and port of the
@@ -359,4 +359,3 @@ with `--set`:
 ```bash
 --set 'extraArgs={--acme-http01-solver-nameservers=8.8.8.8:53\,1.1.1.1:53}'
 ```
-
